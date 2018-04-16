@@ -1,0 +1,4 @@
+- unearth how the socket.io chat demo on AWS works
+- put my own socket.io / aws server up
+- install simple signalling server on it
+- use it as signalling server for simple peer
