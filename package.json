@@ -4,6 +4,8 @@
   "description": "Real time ephemeral text-only chatting on any page you are on. Browser extension.",
   "main": "index.js",
   "dependencies": {
+    "express": "^4.16.3",
+    "npm-watch": "^0.3.0",
     "simple-peer": "^9.0.0"
   },
   "devDependencies": {},
