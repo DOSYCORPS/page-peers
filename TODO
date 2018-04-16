@@ -1,4 +1,16 @@
-- unearth how the socket.io chat demo on AWS works
-- put my own socket.io / aws server up
+DONE - unearth how the socket.io chat demo on AWS works
+DONE - put my own socket.io / aws server up
 - install simple signalling server on it
 - use it as signalling server for simple peer
+
+BUT IDEA
+
+Why do we need a signalling server?
+How long is signalling data valid for?
+Can I generate my "signalling code" ( an opaque block of, say, b64 or whatever, or a QR code or whatever )
+A QR code is more than enough to contain signalling offer key information ( for data channel, around 400 bytes )
+
+But still these only live for like 30 seconds. I read.
+
+
+
