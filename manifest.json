@@ -24,5 +24,9 @@
     "<all_urls>",
     "tabs",
     "storage"
+  ],
+  "web_accessible_resources": [
+    "chat_ui.html",
+    "chat_app.js"
   ]
 }
