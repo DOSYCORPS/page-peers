@@ -12,5 +12,48 @@ A QR code is more than enough to contain signalling offer key information ( for 
 
 But still these only live for like 30 seconds. I read.
 
+The problem as I see it is I do not want to set up a server for this simple extension. I just want to allow people to converse with each other 
+sans any intermediary.
+
+That's P2P. That's also low cost.
+
+I understand the technical requirement for a signalling server. 
+
+And really there is no way around it. Even I use some third party messaging system like FCM, I still need to make requests to FCM
+from a secure client which therefore must reside on a server to protect the API key. 
+
+So any P2P app without manual signalling requires a server.
+
+So then we must use manual signalling.
+
+But F copy and paste
+
+We can use something like IM.
+
+Discord: https://discord.gg/9yrzbta
+
+The problem with setting up a signalling server is:
+
+- cost
+- complexity ( it's a whole app in itself, because then I will need ident etc )
+
+If I am going to do this, then I may as well just do my primary project first. 
+These ideas are meant to be single day ideas.
+
+I will possibly have a signalling server as part of primary project in future. 
+But that is, if I choose it, necessary and justified cost and complexity.
+
+For a tiny project like this, I want to skip it.
+
+So I will launch the extension, with instructions on how to signal with your friends
+( just swap on hangouts, or some other IM )
+Or signal with strangers. Come to the app discord and join the daily signalling swap.
+
+People can resarch together, etc. I like this idea, but I don't want a signalling server, for now.
+
+
+
+
+
 
 
