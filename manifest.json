@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "Page Peers",
+  "short_name": "PaPe",
+  "description": "Real time ephemeral text-only chatting on any page you are on. Browser extension.",
+  "author": "The Dosyago Corporation",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["promisify.js", "install_chat.js"],
+      "all_frames": true
+    }
+  ],
+  "browser_action": {
+    "default_title": "Page Peers Settings",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["promisify.js", "run_bg.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "<all_urls>",
+    "tabs",
+    "storage"
+  ]
+}

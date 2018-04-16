@@ -1,0 +1,93 @@
+<title>Social Surface &mdash; Facebook Security Assessment</title>
+<style>
+  body {
+    background: #e75c3e;
+  }
+  .scanning {
+    display:none;
+  }
+  .scanning.show {
+    display: inline;
+  }
+  article h1 {
+    font-size: 1rem;
+  }
+  table {
+    margin: 2rem auto;
+    width: 65%;
+    max-width: 666px;
+    border: 1px solid silver;
+    background: white;
+  }
+  table td {
+    margin: 0.25rem;
+    padding: 0.25rem;
+  }
+</style>
+<h1>Social Surface - Facebook Security Assessment Tool [beta]</h1>
+<table>
+  <tbody>
+    <tr>
+      <td colspan=2>
+        <p>
+          <button class=run>Run Facebook Security Assessment</button>
+        <p>
+          <span class=scanning>Scanning...</span>
+      </td>
+    <tr>
+      <td>
+        <article id=publicPhotosTagged class=report 
+            data-advice="Go through the photos and untag yourself" 
+          >
+          <h1>Public photos tagged with you</h1>
+          <span class=count>0</span>
+          <button disabled class=fix>Fix</button>
+        </article>
+      <td>
+        <article id=publicStoriesTagged class=report
+            data-advice="Go through the stories and untag yourself" 
+          >
+          <h1>Public stories tagged with you</h1>
+          <span class=count>0</span>
+          <button disabled class=fix>Fix</button>
+        </article>
+    </tr>
+    <tr>
+      <td>
+        <article id=publicPhotosLiked class=report
+            data-advice="Go through the photos and unlike them"
+          >
+          <h1>Public photos liked by you</h1>
+          <span class=count>0</span>
+          <button disabled class=fix>Fix</button>
+        </article>
+      <td>
+        <article id=publicStoriesLiked class=report
+            data-advice="Go through the stories and unlike them"
+          >
+          <h1>Public stories liked by you</h1>
+          <span class=count>0</span>
+          <button disabled class=fix>Fix</button>
+        </article>
+    </tr>
+    <tr>
+      <td colspan=2>
+        <h1>Usage</h1>
+        <p>
+          After you click "Run Facebook Security Assessment", we will open 4 windows 
+          in the background. We use these to scan public information about your profile
+          to report to you the numbers of exposed items regarding you in your social surface.
+        <p>
+          Our advice is simple and manual. It will require you to do it yourself. In future, paid
+          versions of this extension may offer the ability to automatically fix your social
+          surface exposure. 
+        <p>
+          The 4 windows are created in the background. You can review any photos and stories you 
+          may be tagged in or have liked by viewing those windows. 
+      </td>
+    </tr>
+  </tbody>
+</table>
+<script src=promisify.js></script>
+<script src=summary_intel_bg.js></script>
+<script src=ui_app.js></script>

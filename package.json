@@ -1,0 +1,40 @@
+{
+  "name": "page-peers",
+  "version": "1.0.0",
+  "description": "Real time ephemeral text-only chatting on any page you are on. Browser extension.",
+  "main": "index.js",
+  "dependencies": {
+    "simple-peer": "^9.0.0"
+  },
+  "devDependencies": {},
+  "watch": {
+    "start": {
+      "patterns": [
+        "*"
+      ],
+      "extensions": "js,html,css",
+      "quiet": false
+    }
+  },
+  "scripts": {
+    "start": "node index.js",
+    "watch": "npm-watch",
+    "test": "npm run watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dosyago-corp/page-peers.git"
+  },
+  "keywords": [
+    "chat",
+    "webrtc",
+    "p2p",
+    "extension"
+  ],
+  "author": "@dosy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dosyago-corp/page-peers/issues"
+  },
+  "homepage": "https://github.com/dosyago-corp/page-peers#readme"
+}
